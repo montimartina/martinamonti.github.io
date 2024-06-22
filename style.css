@@ -1,0 +1,123 @@
+:root {
+    --background-color-light: #f0f8ff;
+    --background-color-dark: #2c3e50;
+    --text-color-light: #2c3e50;
+    --text-color-dark: #ecf0f1;
+    --primary-color-light: #3498db;
+    --primary-color-dark: #2980b9;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    background: url('sea-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.light-mode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-weight: bold;
+}
+
+nav button {
+    background-color: var(--primary-color-light);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+body.dark-mode nav {
+    background-color: rgba(44, 62, 80, 0.8);
+}
+
+body.dark-mode nav ul li a {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode nav button {
+    background-color: var(--primary-color-dark);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--primary-color-light);
+}
+
+.timeline-event {
+    margin-bottom: 20px;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color-light);
+}
+
+body.dark-mode .timeline {
+    border-left-color: var(--primary-color-dark);
+}
+
+body.dark-mode .timeline-event::before {
+    background-color: var(--primary-color-dark);
+}
