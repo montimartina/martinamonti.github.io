@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhD Student Personal Web Page</title>
+    <style>
+        :root {
+            --background-color-light: #f0f8ff;
+            --background-color-dark: #2c3e50;
+            --text-color-light: #2c3e50;
+            --text-color-dark: #ecf0f1;
+            --primary-color-light: #3498db;
+            --primary-color-dark: #2980b9;
+        }
+
+        body.light-mode {
+            background-color: var(--background-color-light);
+            color: var(--text-color-light);
+        }
+
+        body.dark-mode {
+            background-color: var(--background-color-dark);
+            color: var(--text-color-dark);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid var(--primary-color-light);
+        }
+
+        .timeline-event {
+            margin-bottom: 20px;
+        }
+
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--primary-color-light);
+        }
+
+        .dark-mode .timeline {
+            border-left-color: var(--primary-color-dark);
+        }
+
+        .dark-mode .timeline-event::before {
+            background-color: var(--primary-color-dark);
+        }
+
+        button {
+            background-color: var(--primary-color-light);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        body.dark-mode button {
+            background-color: var(--primary-color-dark);
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="container">
+        <header>
+            <h1>PhD Student Personal Web Page</h1>
+            <button onclick="toggleMode()">Toggle Light/Dark Mode</button>
+        </header>
+
+        <div class="section" id="about-me">
+            <h2>About Me</h2>
+            <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+            <p>Welcome! I am a PhD student specializing in [Your Field]. My research focuses on [Your Research Focus]. I am passionate about [Your Passions].</p>
+        </div>
+
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <h3>PhD in [Your Field]</h3>
+                    <p>[University Name], [Year] - Present</p>
+                </div>
+                <div class="timeline-event">
+                    <h3>Master's in [Your Field]</h3>
+                    <p>[University Name], [Year] - [Year]</p>
+                </div>
+                <div class="timeline-event">
+                    <h3>Bachelor's in [Your Field]</h3>
+                    <p>[University Name], [Year] - [Year]</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="academia">
+            <h2>Academia</h2>
+            <p>I have published several papers in prestigious journals including [Journal Names]. My current research involves [Brief Description of Research].</p>
+        </div>
+
+        <div class="section" id="personal-life">
+            <h2>Personal Life</h2>
+            <p>Outside of academia, I enjoy [Hobbies and Interests]. I also volunteer at [Organization] and participate in [Community Activities].</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMode() {
+            var body = document.body;
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+            }
+        }
+    </script>
+</body>
+</html>
