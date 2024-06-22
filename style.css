@@ -1,136 +1,86 @@
-:root {
-    --background-color-light: #f0f8ff;
-    --background-color-dark: #2c3e50;
-    --text-color-light: #2c3e50;
-    --text-color-dark: #ecf0f1;
-    --primary-color-light: #3498db;
-    --primary-color-dark: #2980b9;
-}
-
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: background-color 0.5s, color 0.5s;
-    background: url('sea-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-}
-
-body.light-mode {
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
-}
-
-body.dark-mode {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
-}
-
-.sidebar {
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-}
-
-body.dark-mode .sidebar {
-    background-color: rgba(44, 62, 80, 0.8);
-}
-
-nav ul {
-    list-style-type: none;
     padding: 0;
-}
-
-nav ul li {
-    margin: 20px 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--text-color-light);
-    font-weight: bold;
-    display: block;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-body.dark-mode nav ul li a {
-    color: var(--text-color-dark);
-}
-
-nav ul li a:hover {
-    background-color: var(--primary-color-light);
-    color: white;
-}
-
-body.dark-mode nav ul li a:hover {
-    background-color: var(--primary-color-dark);
-}
-
-button {
-    background-color: var(--primary-color-light);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 100%;
-}
-
-body.dark-mode button {
-    background-color: var(--primary-color-dark);
-}
-
-.content {
-    margin-left: 250px;
-    padding: 20px;
-    flex-grow: 1;
+    scroll-behavior: smooth;
 }
 
 header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 5rem 1rem;
+    margin-top: 4rem;
+}
+
+section#intro {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
     text-align: center;
-    margin-bottom: 50px;
 }
 
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.section {
-    margin-bottom: 50px;
+section h2 {
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .timeline {
-    position: relative;
-    padding-left: 20px;
-    border-left: 2px solid var(--primary-color-light);
+    border-left: 2px solid #333;
+    padding-left: 2rem;
 }
 
-.timeline-event {
-    margin-bottom: 20px;
-}
-
-.timeline-event::before {
+.timeline::before {
     content: '';
-    position: absolute;
-    left: -8px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--primary-color-light);
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #333;
+    position: relative;
+    left: -2.5rem;
+    top: 0;
 }
 
-body.dark-mode .timeline {
-    border-left-color: var(--primary-color-dark);
+.timeline div {
+    margin-bottom: 2rem;
 }
 
-body.dark-mode .timeline-event::before {
-    background-color: var(--primary-color-dark);
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
