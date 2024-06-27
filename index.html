@@ -8,12 +8,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon-96x96.png" rel="apple-touch-icon">
-
-  
-  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -41,6 +35,9 @@
   
 <body class="index-page">
 
+  <header id="header" class="header d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
     <div class="profile-img">
       <img src="assets/img/favicon-96x96.jpg" alt="" class="img-fluid rounded-circle">
     </div>
@@ -52,25 +49,21 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="mailto:martina.monti1@unimi.it" class="twitter"><i class="bi bi-envelope-at"></i></a>
+      <a href="mailto:martina.monti1@unimi.it" class="twitter"><i class="bi bi-envelope"></i></a>
       <a href="https://www.facebook.com/martina.monti.1291?locale=it_IT" class="facebook"><i class="bi bi-facebook"></i></a>
       <a href="https://www.instagram.com/martina_monti/" class="instagram"><i class="bi bi-instagram"></i></a>
-    </div>
-     <div class="social-links text-center">
       <a href="https://www.linkedin.com/in/mmonti1996/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/montimartina" class="github"><i class="bi bi-github"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+       <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About Me</a></li>
         <li><a href="#skills"><i class="bi bi-hdd-stack navicon"></i> Skills </a></li>
         <li><a href="#resume"><i class="bi  bi-mortarboard navicon"></i> Resume</a></li>
           <li><a href="#certification"><i class="bi bi-patch-check-fill navicon"></i> Certifications</a></li>
         <li><a href="#preprint"><i class="bi bi-file-earmark-text-fill navicon"></i> Preprints and articles</a></li>
          <li><a href="#teaching"><i class="bi bi-briefcase navicon"></i> Teaching </a></li>
-        </li>
       </ul>
     </nav>
 
@@ -81,23 +74,22 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <img src="./lavagna-poitiers.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/IMG_1461.png" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2> Martina Monti</h2></h2>
-        <p>I'm <span class="typed" data-typed-items="a mathematician, a reseracher, a creative person, a dynamic person, ready to learn"> </span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Mathematician, Reseracher, Creative person, Dynamic person, ready to learn">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
-      
+
     </section><!-- /Hero Section -->
 
-
-  <!-- About Section -->
+    <!-- About Section -->
     <section id="about" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Me</h2>
-  <p>
+        <h2>About</h2>
+       <p>
     I am a PhD student jointly enrolled at <a href="https://www.unimi.it/it"> University of Milan (Italy)
         </a>  and <a href="https://www.univ-poitiers.fr"> University of Poitiers (France)
         </a>. </p>
@@ -108,7 +100,6 @@
 In addition to my primary research, I have a keen interest in data science and artificial intelligence. I am passionate about applying critical and logical mathematical thinking to solve real-world problems.
   </p>
       </div><!-- End Section Title -->
-    
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -116,14 +107,14 @@ In addition to my primary research, I have a keen interest in data science and a
           <div class="col-lg-4">
             <img src="assets/img/favicon-96x96.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-8 content"> 
-    
+          <div class="col-lg-8 content">
+            
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>September 1996</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Spoken languagues:</strong> <span>Italian, English, French</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Programming languages:</strong> <span>Python, Latex, MySQL, HTML, CSS, Excel, C, MATLAB </span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Programming languages:</strong> <span>Pytho, Latex, MySQL, Excel, C, MATLAB </span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Known library:</strong> <span>Numpy, Pandas </span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Turate, Italy</span></li>
                 </ul>
@@ -131,27 +122,22 @@ In addition to my primary research, I have a keen interest in data science and a
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>PhD student in Math</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Academic email:</strong> <a href="mailto:martina.monti1@unimi.it"> martina.monti1@unimi.it</a></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Personal email:</strong> <a href="mailto:marti.monti7@gmail.com"> marti.monti7@gmail.com</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>PhD student</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Academic email:</strong> <span>martina.monti1@unimi.it</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Personal email:</strong> <span>martina.monti7@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Avaiable </span></li>
                 </ul>
               </div>
             </div>
-          </div>
-          <p class="py-3">
+            <p class="py-3">
               A part my mathematical background, I have verydifferent hobbies including sport (swimming, calisthenics), music (piano & singing), travelling and meet new people and costums. 
             </p>
+          </div>
         </div>
 
       </div>
 
     </section><!-- /About Section -->
-
-
-
-
-    
 
 
     <!-- Skills Section -->
@@ -169,7 +155,7 @@ In addition to my primary research, I have a keen interest in data science and a
 
           <div class="col-lg-6">
 
-            <div class="progress">
+            < <div class="progress">
               <span class="skill"><span>Latex</span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -223,7 +209,7 @@ In addition to my primary research, I have a keen interest in data science and a
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-         <p class="title">Here my <a href="https://drive.google.com/file/d/17jVECbWEd_Mx1XFVtOxZw0WbK8zYc-I9/view" class="stretched-link">Curriculum Vitae</a>.</p>
+ <p class="title">Here my <a href="https://drive.google.com/file/d/17jVECbWEd_Mx1XFVtOxZw0WbK8zYc-I9/view" class="stretched-link">Curriculum Vitae</a>.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -233,7 +219,7 @@ In addition to my primary research, I have a keen interest in data science and a
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Summary</h3>
 
-            <div class="resume-item pb-0">
+           <div class="resume-item pb-0">
               <h4>Doctorate in mathematics</h4>
               <h5>October 2021 - Present</h5>
               <p><em>University of Mianno and Universté de Poitiers.</em></p>
@@ -299,22 +285,16 @@ In addition to my primary research, I have a keen interest in data science and a
 
       </div>
 
-
-        </div>
-
-      </div>
-
-
-      
     </section><!-- /Resume Section -->
 
 
    <!-- Certification Section -->
-    <section id="certification" class="services section">
+    <section id=“certification" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Certifications </h2>
+     
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -326,7 +306,7 @@ In addition to my primary research, I have a keen interest in data science and a
             <div>
               <h4 class="title"><a href="https://coursera.org/share/36cd51804eb98f67329c00f86cf317eb" class="stretched-link">Python Project for Data Science</a></h4>
               <p class="description"> May 2024, IMB Certificate via Coursera </p>
-                <p class="description"> NumPy · Pandas (Software) · Database · Viasualizzazione dati · Analisi dei dati · Data Visualization · Data Management · Big Data · Python </p>
+                <p class="description"> NumPy · Pandas (Software) · Database · Viasualizzazione dati · Analisi dei dati · Data Visualization · Data Management · Big Data · Python</p>
       
             </div>
           </div>
@@ -359,13 +339,18 @@ In addition to my primary research, I have a keen interest in data science and a
 
     </section><!-- /Certification Section -->
 
+
+
+
+
     
     <!-- Preprints Section -->
-    <section id="preprint" class="services section">
+    <section id=“preprint" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Preprints and article</h2>
+        
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -397,6 +382,7 @@ In addition to my primary research, I have a keen interest in data science and a
 
     </section><!-- /Preprints Section -->
 
+  
 <section id="teaching" class="resume section">
 
   
@@ -442,15 +428,13 @@ In addition to my primary research, I have a keen interest in data science and a
           </div>
           </div>
       </div>
-  </section>
+  </section>  <!— /end teaching section —>
 
 
 
 
 
 
-
-    
   </main>
 
   <footer id="footer" class="footer position-relative">
@@ -467,9 +451,6 @@ In addition to my primary research, I have a keen interest in data science and a
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-
-
-    
 
   </footer>
 
