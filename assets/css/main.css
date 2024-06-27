@@ -156,12 +156,17 @@ h6 {
 @media (max-width: 1199px) {
   .header {
     left: -100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Ensure header is visible when shown */
+    transition: left 0.3s ease;
   }
 }
 
 .header.header-show {
   left: 0;
-  display: block;
 }
 
 .header .header-toggle {
